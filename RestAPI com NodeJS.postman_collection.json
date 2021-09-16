@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "ea35ea89-55e0-4215-869c-5b62de7ecc97",
+		"name": "RestAPI com NodeJS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Criar Atendimentos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "cliente",
+							"value": "Igor Solfa Romero",
+							"type": "text"
+						},
+						{
+							"key": "pet",
+							"value": "Sonic",
+							"type": "text"
+						},
+						{
+							"key": "servico",
+							"value": "Tosa",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "agendado",
+							"type": "text"
+						},
+						{
+							"key": "observacoes",
+							"value": "muito bonzinho",
+							"type": "text"
+						},
+						{
+							"key": "data",
+							"value": "16/10/2021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/atendimentos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Atendimentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/atendimentos",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar por ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/atendimentos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar Atendimento",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "data",
+							"value": "17/09/2021",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/atendimentos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Atendimennto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:3000/atendimentos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"atendimentos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
